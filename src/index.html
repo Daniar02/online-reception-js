@@ -6,9 +6,62 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Reception - Онлайн приемная</title>
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/core-light.min.css">
 </head>
 <body>
+<section class="section">
+    <div class="container">
+        <div class="card select__reception">
+            <div class="card-header">
+                <h1 class="card-header-title">
+                    Заявление
+                    <span class="card-header-title-info">1 этап</span>
+                </h1>
+                <p class="card-header-desc">Выберите необходимые данные</p>
+            </div>
+            <div class="card-body">
+                <form id="formSelectReception" class="form" novalidate>
+                    <div class="form-group classing">
+                        <div class="form_radio_btn">
+                            <input type="radio" name="classing" id="classing-9" value="9" class="form-check-input" required>
+                            <label for="classing-9">9 класс</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" name="classing" id="classing-11" value="11" class="form-check-input"  required>
+                            <label for="classing-11">11 класс</label>
+                        </div>
+                    </div>
+                    <div class="form-group training-base">
+                        <div class="form_radio_btn">
+                            <input type="radio" name="training-base" id="training-base-budget" value="budget" class="form-check-input" required>
+                            <label for="training-base-budget">Бюджет</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" name="training-base" id="training-base-contract" value="contract" class="form-check-input" required>
+                            <label for="training-base-contract">Контракт</label>
+                        </div>
+                    </div>
 
+                    <div class="form-group training-form">
+                        <div class="form_radio_btn">
+                            <input type="radio" name="training-form" id="training-form-full-time" value="full-time" class="form-check-input" required>
+                            <label for="training-form-full-time">Очный</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input type="radio" name="training-form" id="training-form-part-time" value="part-time" class="form-check-input" required>
+                            <label for="training-form-part-time">Заочный</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-next btn btn-primary">Далее</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/libs/bootstrap-5.3.0-alpha2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/forms.js"></script>
+</section>
 </body>
 </html>
