@@ -1,1 +1,14 @@
 @import "base/style";
+
+body {
+  background-color: $--bs-body-bg;
+  color: $--bs-silver;
+}
+
+@import "blocks/section";
+@import "blocks/card";
+@import "blocks/light/card";
+@import "blocks/receptions";
+@import "blocks/forms";
+@import "blocks/light/forms";
+
