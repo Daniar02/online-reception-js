@@ -1,0 +1,23 @@
+.form {
+  &-group {
+    & .form_radio_btn {
+      & input[type=radio] {
+        &:checked + label {
+          background: $--bs-primary-rgb;
+          color: $--bs-primary;
+          border: 1px solid $--bs-primary;
+        }
+        &:disabled + label {
+          background: #efefef;
+          color: #666;
+        }
+      }
+      & label {
+        &:hover {
+          background-color: $--bs-primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
